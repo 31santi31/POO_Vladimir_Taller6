@@ -81,25 +81,25 @@ false
 Paquetes: parqueadero.modelo (Parqueadero, Puesto) y parqueadero.app (Main). Todos los atributos
 privados.
 
-• Puesto: numero (int) y placa (String, null si está libre). Constructor (numero) sin public. Métodos
+1. Puesto: numero (int) y placa (String, null si está libre). Constructor (numero) sin public. Métodos
 getNumero(), getPlaca(), estaLibre(), ocupar(String placa) y liberar().
 
-• Parqueadero: nombre (String) y puestos (ArrayList<Puesto>). El constructor (nombre, int cantidad) crea los
+2. Parqueadero: nombre (String) y puestos (ArrayList<Puesto>). El constructor (nombre, int cantidad) crea los
 puestos numerados de 1 a cantidad. Un atributo static ingresosTotales cuenta los vehículos que han entrado
 a cualquier parqueadero, con su método static getIngresosTotales().
 
-• ingresar(String placa): si la placa ya está adentro imprime <placa> ya está adentro; si no, ocupa el
+3. ingresar(String placa): si la placa ya está adentro imprime <placa> ya está adentro; si no, ocupa el
 primer puesto libre, suma un ingreso e imprime <placa> en puesto <n>; si no hay puestos libres imprime
 <placa>: parqueadero lleno.
 
-• salir(String placa): libera el puesto de esa placa y devuelve true, o devuelve false si no está.
+4. salir(String placa): libera el puesto de esa placa y devuelve true, o devuelve false si no está.
 puestosLibres(): devuelve cuántos puestos están libres.
 
-• Main: crea Centro con 2 puestos y Norte con 3. En Centro ingresan ABC123, ABC123, XYZ789 y JKL456. Imprime
+5. Main: crea Centro con 2 puestos y Norte con 3. En Centro ingresan ABC123, ABC123, XYZ789 y JKL456. Imprime
 centro.salir("ABC123"). Ingresa JKL456 en Centro y MNO321 en Norte. Imprime los puestos libres de
 Centro y de Norte, y Parqueadero.getIngresosTotales().
 
-• Diagrama de clases de Parqueadero y Puesto en draw.io (composición con multiplicidad, static subrayado y
+6. Diagrama de clases de Parqueadero y Puesto en draw.io (composición con multiplicidad, static subrayado y
 paquete), en PNG.
 
 <img width="1200" height="760" alt="diagrama-parqueadero" src="https://github.com/user-attachments/assets/163aff47-3b13-44bc-aec3-9b3193bbc03e" />
